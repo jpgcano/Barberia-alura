@@ -1,0 +1,81 @@
+header{
+    background-color:  #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+.logo{
+    display: inline;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right: 0px;
+
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{ 
+    color: #c78c19;
+}
+.Productos{
+    width: 980px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.Productos li {
+    display: inline-block;
+    width: 30%;
+    text-align: center; 
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.Productos li:hover{
+    color:#c78c19;
+    border-color: #c78c19;
+    }
+.Productos li:active{
+    border-color: #088c19;
+    color:#088c19
+}
+.Productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.Productos li:hover h2 {
+    font-size: 36px;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+footer{
+    background-image: url(/imagenes/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+.Copyright{
+    margin: 20px;
+    color: white;
+    font-size: 13px;
+}
