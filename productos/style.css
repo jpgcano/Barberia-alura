@@ -1,44 +1,56 @@
-header{
-    background-color:  #bbbbbb;
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #bbbbbb;
     padding: 20px 0;
 }
-.caja{
+
+.caja {
     position: relative;
     width: 940px;
     margin: 0 auto;
 }
-.logo{
+
+.logo {
     display: inline;
 }
-nav{
+
+nav {
     position: absolute;
-    top:110px;
+    top: 110px;
     right: 0px;
 
 }
-nav li{
+
+nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
-nav a{
+
+nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
 }
-nav a:hover{ 
+
+nav a:hover {
     color: #c78c19;
 }
-.Productos{
+
+.Productos {
     width: 980px;
     margin: 0 auto;
     padding: 50px;
 }
+
 .Productos li {
     display: inline-block;
     width: 30%;
-    text-align: center; 
+    text-align: center;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 20px 20px;
@@ -46,63 +58,74 @@ nav a:hover{
     border: 2px solid #000000;
     border-radius: 10px;
 }
-.Productos li:hover{
-    color:#c78c19;
+
+.Productos li:hover {
+    color: #c78c19;
     border-color: #c78c19;
-    }
-.Productos li:active{
-    border-color: #088c19;
-    color:#088c19
 }
+
+.Productos li:active {
+    border-color: #088c19;
+    color: #088c19
+}
+
 .Productos h2 {
     font-size: 30px;
     font-weight: bold;
 }
+
 .Productos li:hover h2 {
     font-size: 36px;
 }
-.producto-descripcion{
+
+.producto-descripcion {
     font-size: 18px;
 }
-.producto-precio{
+
+.producto-precio {
     font-weight: bold;
     font-size: 20px;
     margin-top: 10px;
 }
-footer{
+
+footer {
     background-image: url(/imagenes/bg.jpg);
     text-align: center;
     padding: 40px;
 }
-.Copyright{
+
+.Copyright {
     margin: 20px;
     color: white;
     font-size: 13px;
 }
 
 
-main{ 
-    width: 940px;
-    margin: 0 auto ;
-}
-form{
+main {}
+
+form {
     margin: 40px 0;
 }
-form label , legend{
+
+form label,
+legend {
     display: block;
     font-size: 20px;
-    margin: 0  0 10px;
+    margin: 0 0 10px;
 }
-.input-formulario{
+
+.input-formulario {
     display: block;
-    margin: 0 0 20px ;
+    margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
-.checkbox{
+
+.checkbox {
     margin: 20px 0;
 }
-.Enviar{
+
+.Enviar {
     width: 40%;
     padding: 15px 0;
     font-size: 18px;
@@ -114,22 +137,137 @@ form label , legend{
     transition: 1s all;
     cursor: pointer;
 }
-.Enviar:hover{
+
+.Enviar:hover {
     background: darkorange;
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
-table{
+table {
     width: 40%;
     margin: 40px 40px;
     text-align: center;
 }
-thead{
+
+thead {
     background: #555555;
     color: white;
     font-weight: bold;
 }
-td,th{
+
+td,
+th {
     border: 1px solid black;
     padding: 8px 15px;
+}
+
+
+/* Css para nuestra home*/
+.banner {
+    width: 100%;
+}
+
+.principal {
+    background-color: #fefefe;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+
+
+.utensilios {
+    width: 120px;
+    margin: 0 20px 20px 0;
+    float: left;
+    border-radius: 40dvb;
+}
+
+
+.conteiner-map {
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.mapa {
+    background:linear-gradient(#fefefe,#888888);
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.diferenciales {
+    background: #888888;
+}
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.items:before{
+    content: "★";
+}
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagenDiferencial {
+    width: 60%;
+    display: inline-block;
+    box-shadow: 10px 10px 30px 15px black;
+}
+.imagenDiferencial:hover{
+    opacity: 0.2;
+    transition: 1s;
+}
+
+@media screen and (max-width:480px) {
+.caja,.principal, .conteiner-map,.contenido-diferenciales{
+    width: auto;
+}
+h1{
+    text-align: center;
+}
+.navegador{
+    position: static;
+}
+.lista-diferenciales,.imagenDiferencial{
+    width: 100%;
+}
 }
